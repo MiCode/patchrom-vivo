@@ -5,6 +5,7 @@
 # The original zip file, MUST be specified by each product
 local-zip-file     := stockrom.zip
 
+
 # The output zip file of MIUI rom, the default is update.zip if not specified
 # local-out-zip-file :=
 
@@ -13,20 +14,17 @@ local-zip-file     := stockrom.zip
 
 local-modified-jars := HTCExtension
 
-local-miui-modified-apps := Phone ThemeManager Mms MiuiHome Settings
+local-miui-modified-apps := Phone ThemeManager Mms MiuiHome Settings MiuiGallery
 # All apks from MIUI
-local-miui-removed-apps  := MediaProvider  MiuiGallery SettingsProvider
+local-miui-removed-apps  := MediaProvider SettingsProvider
 
 #local-remove-apps := Twitter  
 # All apps need to be reserved from original ZIP file
-local-phone-apps := BackupRestoreConfirmation UserDictionaryProvider \
-	CertInstaller HTCCamera DefaultContainerService DrmProvider \
-	HtcFMRadio com.htc.FMRadioWidget \
-	HTMLViewer HTC_IME KeyChain \
-	SDCardWizard SharedStorageBackup \
-	TrimIt WifiRouter MediaProvider HTCAlbum HtcVideoPlayer SettingsProvider\
-	HtcDMC HtcDLNAMiddleLayer HtcPhotoWidget idlescreen_photo \
-	ApplicationsProvider
+local-phone-apps := ApplicationsProvider AppSharing BackupRestoreConfirmation Bluetooth BrcmBluetoothServices \
+	CertInstaller CustomizationSettingsProvider DefaultContainerService DFPI DrmProvider FilePicker \
+	HTC_IME HTCCamera HtcFMRadio HtcListen HTMLViewer KeyChain LiveWallpapers LMW  \
+	NoiseField  PhaseBeam PluginManager SDCardWizard SharedStorageBackup Stk \
+	TrimIt UploadProvider Usage UserDictionaryProvider WifiRouter
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
