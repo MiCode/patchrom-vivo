@@ -2844,7 +2844,7 @@
 
     move-result-object v3
 
-    const/high16 v5, 0x206
+    const/high16 v5, 0x20c
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->openRawResourceFd(I)Landroid/content/res/AssetFileDescriptor;
     :try_end_3
