@@ -16,16 +16,17 @@ local-modified-jars := HTCExtension
 
 local-miui-modified-apps := Phone ThemeManager Mms MiuiHome Settings MiuiGallery
 # All apks from MIUI
-local-miui-removed-apps  := MediaProvider  SettingsProvider
+local-miui-removed-apps  := LatinIME 
 
 
 #local-remove-apps := Twitter  
 # All apps need to be reserved from original ZIP file
-local-phone-apps := ApplicationsProvider AppSharing BackupRestoreConfirmation Bluetooth BrcmBluetoothServices \
-	CertInstaller CustomizationSettingsProvider DefaultContainerService DFPI DrmProvider FilePicker \
-	HTC_IME HTCCamera HtcFMRadio HTMLViewer KeyChain LiveWallpapers LMW  \
-	NoiseField  PhaseBeam PluginManager SDCardWizard SharedStorageBackup Stk \
-	TrimIt UploadProvider Usage UserDictionaryProvider WifiRouter SettingsProvider
+local-phone-apps := ApplicationsProvider BackupRestoreConfirmation Bluetooth BrcmBluetoothServices \
+	CertInstaller DefaultContainerService DFPI DrmProvider FilePicker \
+	HTC_IME HTCCamera HtcFMRadio com.htc.FMRadioWidget  HTMLViewer KeyChain LMW  \
+	NoiseField PluginManager SDCardWizard SharedStorageBackup Stk \
+	TrimIt UploadProvider Usage UserDictionaryProvider WifiRouter \
+	CustomizationSettingsProvider
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
