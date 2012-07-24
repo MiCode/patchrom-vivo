@@ -2557,7 +2557,7 @@
 
     if-lt v0, v2, :cond_3
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     .restart local v1       #level:I
     goto :goto_0
@@ -2569,7 +2569,7 @@
 
     if-lt v0, v2, :cond_4
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     .restart local v1       #level:I
     goto :goto_0
@@ -2577,7 +2577,7 @@
     .line 538
     .end local v1           #level:I
     :cond_4
-    const/4 v1, 0x1
+    const/4 v1, 0x4
 
     .restart local v1       #level:I
     goto :goto_0
@@ -2659,6 +2659,15 @@
     .line 439
     .local v2, level:I
     :goto_0
+    const/4 v4, 0x1
+
+    if-gt v2, v4, :cond_5
+
+    return v2
+
+    :cond_5
+    const/4 v2, 0x4
+
     return v2
 
     .line 422
