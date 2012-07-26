@@ -2567,7 +2567,7 @@
     .line 538
     .end local v1           #level:I
     :cond_4
-    const/4 v1, 0x4
+    const/4 v1, 0x1
 
     .restart local v1       #level:I
     goto :goto_0
