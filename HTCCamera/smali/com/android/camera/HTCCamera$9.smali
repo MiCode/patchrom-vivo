@@ -189,7 +189,7 @@
 
     new-instance v1, Landroid/content/Intent;
 
-    const-string v2, "android.intent.action.VIEW"
+    const-string v2, "com.htc.album.action.VIEW_PHOTO_FROM_CAMERA"
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
