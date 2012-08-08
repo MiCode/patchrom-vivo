@@ -6,22 +6,9 @@
     <application android:theme="@style/Theme.base" android:label="@string/str_app_name3" android:icon="@drawable/albums" android:taskAffinity="" android:description="@com.htc:string/htc_about_company_name" android:hardwareAccelerated="false" allowSkinChange="true">
         <uses-library android:name="com.htc.sunny2" />
         <meta-data android:name="opensense" android:resource="@xml/supports" />
-        <activity android:theme="@style/Theme.fakescreen" android:name="com.htc.album.AlbumMain.ActivityMainDropList" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity android:name="com.htc.album.AlbumMain.ActivityMainExtLauncher" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
                 <action android:name="com.htc.album.action.MainEntry" android:mimeType="*/*" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -233,21 +220,6 @@
             </intent-filter>
         </activity>
         <activity android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" android:name=".addons.ActivityImageViewer" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/png" />
-                <data android:mimeType="image/jpg" />
-                <data android:mimeType="image/jpeg" />
-                <data android:mimeType="image/gif" />
-                <data android:mimeType="image/x-ms-bmp" />
-                <data android:mimeType="image/bmp" />
-                <data android:mimeType="image/vnd.wap.wbmp" />
-                <data android:mimeType="image/jps" />
-                <data android:mimeType="image/x-jps" />
-                <data android:mimeType="image/mpo" />
-                <data android:mimeType="image/x-mpo" />
-            </intent-filter>
             <intent-filter>
                 <action android:name="com.htc.album.action.VIEW_WEB_PHOTO" />
                 <category android:name="android.intent.category.DEFAULT" />

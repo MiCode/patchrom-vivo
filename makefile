@@ -25,7 +25,8 @@ local-phone-apps := ApplicationsProvider BackupRestoreConfirmation Bluetooth Brc
 	HTC_IME HTCCamera HtcFMRadio com.htc.FMRadioWidget  HTMLViewer KeyChain LMW  \
 	NoiseField PluginManager SDCardWizard SharedStorageBackup Stk \
 	TrimIt UploadProvider Usage UserDictionaryProvider WifiRouter \
-	CustomizationSettingsProvider SettingsProvider HTCAlbum MediaProvider
+	CustomizationSettingsProvider SettingsProvider HTCAlbum MediaProvider \
+	PhaseBeam
 
 # To include the local targets before and after zip the final ZIP file, 
 # and the local-targets should:
@@ -62,7 +63,6 @@ local-zip-misc:
 
 	@echo add spn-conf.xml
 	cp other/spn-conf.xml $(ZIP_DIR)/system/etc/spn-conf.xml
-
 
 	@echo delete redundance files
 	rm -f $(ZIP_DIR)/system/customize/resource/*.png
